@@ -15,7 +15,7 @@ export default function filamentAdjacencyList({
             this.sortable = new Sortable(this.$el, {
                 disabled,
                 group: treeId,
-                animation: 150,
+                animation: 0,
                 fallbackOnBody: true,
                 swapThreshold: 0.25,
                 invertSwap: true,
