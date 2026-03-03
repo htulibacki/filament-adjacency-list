@@ -32,8 +32,9 @@
         ];
     @endphp
 
+    {{-- An empty function to initialize the Alpine component with until it's loaded with `x-load`. This removes the need for `x-ignore`, allowing the tree to be updated by Livewire. --}}
+    <div x-data="{ filamentAdjacencyList() {} }">
     <div
-        x-ignore
         class="fi-adjacency-list-tree"
         data-sortable-container
         x-load
@@ -84,6 +85,7 @@
                 {{ __('filament-adjacency-list::adjacency-list.items.empty') }}
             </div>
         @endforelse
+    </div>
     </div>
 
     <div class="flex justify-end">
