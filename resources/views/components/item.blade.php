@@ -50,7 +50,7 @@
 
         $hasChildren = count($item[$childrenKey] ?? []) > 0;
 
-        $hitDepthLimit = $maxDepth && substr_count($itemStatePath, $childrenKey) >= $maxDepth;
+        $hitDepthLimit = $maxDepth !== null && substr_count($itemStatePath, $childrenKey) >= $maxDepth;
 
         $itemLabel = $getItemLabel($item);
         $itemAction = $getItemAction($item);

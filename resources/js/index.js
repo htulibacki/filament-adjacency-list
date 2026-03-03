@@ -23,7 +23,7 @@ export default function filamentAdjacencyList({
                 handle: '[data-sortable-handle]',
                 onMove: (evt) => {
                     if (
-                        maxDepth &&
+                        maxDepth !== null &&
                         maxDepth >= 0 &&
                         this.getDepth(evt.related) > maxDepth
                     ) {
