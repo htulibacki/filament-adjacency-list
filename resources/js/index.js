@@ -17,6 +17,7 @@ export default function filamentAdjacencyList({
                 group: treeId,
                 animation: 0,
                 fallbackOnBody: true,
+                forceFallback: true,
                 swapThreshold: 0.25,
                 invertSwap: true,
                 draggable: '[data-sortable-item]',
