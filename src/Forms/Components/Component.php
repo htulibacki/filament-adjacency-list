@@ -5,7 +5,6 @@ namespace Saade\FilamentAdjacencyList\Forms\Components;
 use Filament\Forms;
 use Filament\Support\Components\Attributes\ExposedLivewireMethod;
 use Illuminate\Support\Str;
-use Livewire\Attributes\Renderless;
 use Saade\FilamentAdjacencyList\Forms\Components\Actions\Action;
 
 abstract class Component extends Forms\Components\Field
@@ -49,7 +48,6 @@ abstract class Component extends Forms\Components\Field
     }
 
     #[ExposedLivewireMethod]
-    #[Renderless]
     public function sort(string $targetStatePath, array $targetItemsStatePaths)
     {
         if (! str_starts_with($targetStatePath, $this->getStatePath())) {
